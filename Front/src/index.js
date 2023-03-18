@@ -1,13 +1,23 @@
-import React from 'react';
-import ReactDOM from 'react-dom/client';
-import './index.css';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
+import React from "react";
+import ReactDOM from "react-dom/client";
+import "./index.css";
+import Home from "./pages/Home";
+import reportWebVitals from "./reportWebVitals";
+import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
+import About from "./pages/About";
 
-const root = ReactDOM.createRoot(document.getElementById('root'));
+const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
-    <App />
+    <BrowserRouter>
+      <Routes>
+        {/* <Route index element={<App />} /> */}
+        <Route path="/mycharts" element={<Home />} />
+        <Route path="*" element={<Navigate to="/mycharts" />} />
+        <Route path="/mycharts/about" element={<About />} />
+        {/* <Route path="/intelliq_api/FillingPage" element={<FillingPage />} /> */}
+      </Routes>
+    </BrowserRouter>
   </React.StrictMode>
 );
 
