@@ -5,6 +5,8 @@ import Home from "./pages/Home";
 import reportWebVitals from "./reportWebVitals";
 import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
 import About from "./pages/About";
+import RegisterConfirmation from "./pages/RegisterConfirmation";
+import Profile from "./pages/Profile";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
@@ -15,6 +17,11 @@ root.render(
         <Route path="/mycharts" element={<Home />} />
         <Route path="*" element={<Navigate to="/mycharts" />} />
         <Route path="/mycharts/about" element={<About />} />
+        <Route path="/mycharts/profile" element={<Profile />} />
+        <Route
+          path="/mycharts/registerconfirmation"
+          element={<RegisterConfirmation />}
+        />
         {/* <Route path="/intelliq_api/FillingPage" element={<FillingPage />} /> */}
       </Routes>
     </BrowserRouter>

@@ -3,6 +3,7 @@ import Box from "@mui/material/Box";
 import Toolbar from "@mui/material/Toolbar";
 import Typography from "@mui/material/Typography";
 import Button from "@mui/material/Button";
+import { Link } from "react-router-dom";
 
 export default function ButtonAppBar() {
   return (
@@ -13,10 +14,21 @@ export default function ButtonAppBar() {
             <Typography variant="h6" component="div">
               myCharts
             </Typography>
-            <Button color="inherit" variant="text" sx={{ marginLeft: "13px" }}>
+            <Button
+              component={Link}
+              to="/mycharts"
+              color="inherit"
+              variant="text"
+              sx={{ marginLeft: "13px" }}
+            >
               Home
             </Button>
-            <Button color="inherit" variant="text">
+            <Button
+              component={Link}
+              to="/mycharts/about"
+              color="inherit"
+              variant="text"
+            >
               About
             </Button>
           </Box>
