@@ -19,7 +19,7 @@ function About() {
         >
           myCharts is a web application-service aimed at users who do not have
           the necessary technical knowledge and allows them to create diagrams
-          and they download to their computer in various formats. It supports 9
+          and download them to their computer in various formats. It supports 9
           types of diagrams. For each type, the user can download a template csv
           file that shows how to populate the chart data and the supported
           formatting directives. To create a chart, the user must upload the
