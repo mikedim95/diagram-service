@@ -13,7 +13,6 @@ root.render(
   <React.StrictMode>
     <BrowserRouter>
       <Routes>
-        {/* <Route index element={<App />} /> */}
         <Route path="/mycharts" element={<Home />} />
         <Route path="*" element={<Navigate to="/mycharts" />} />
         <Route path="/mycharts/about" element={<About />} />
@@ -22,7 +21,6 @@ root.render(
           path="/mycharts/registerconfirmation"
           element={<RegisterConfirmation />}
         />
-        {/* <Route path="/intelliq_api/FillingPage" element={<FillingPage />} /> */}
       </Routes>
     </BrowserRouter>
   </React.StrictMode>
