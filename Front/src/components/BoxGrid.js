@@ -1,22 +1,7 @@
 import Grid from "@mui/material/Grid";
 import Box from "@mui/material/Box";
 
-// const useStyles = makeStyles((theme) => ({
-//   root: {
-//     flexGrow: 1,
-//   },
-//   box: {
-//     backgroundColor: "#f0f0f0",
-//     height: 50,
-//     width: 50,
-//     border: "1px solid #ccc",
-//     display: "flex",
-//     alignItems: "center",
-//     justifyContent: "center",
-//     fontSize: 18,
-//     fontWeight: "bold",
-//   },
-// }));
+//This is the component for chart display in home page
 
 const boxes = [
   { id: 1, label: "Chart 1" },

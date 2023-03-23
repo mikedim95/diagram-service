@@ -20,7 +20,8 @@ function Home() {
             <GoogleIcon sx={{ width: "22px", marginRight: "6px" }} />
             Sign in
           </Button>
-          <Box height={"30px"}></Box>
+          <Box height={"30px"}></Box>   
+          {/* just for space between two components */}  
           <BoxGrid />
         </Grid>
       </Grid>
