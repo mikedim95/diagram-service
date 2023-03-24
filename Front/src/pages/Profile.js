@@ -1,9 +1,10 @@
 import ButtonAppBar from "../components/ButtonAppBar";
 import Typography from "@mui/material/Typography";
 import Grid from "@mui/material/Grid";
-import Container from "@mui/material/Container";
 import Box from "@mui/material/Box";
+import Container from "@mui/material/Container";
 import Button from "@mui/material/Button";
+import { Link } from "react-router-dom";
 
 function Profile() {
   return (
@@ -69,7 +70,9 @@ function Profile() {
             marginTop: "40px",
           }}
         >
-          <Button variant="outlined">My charts</Button>
+          <Button variant="outlined" component={Link} to="/mycharts/usercharts">
+            My charts
+          </Button>
           <Button variant="outlined">New chart</Button>
           <Button variant="outlined">Buy credits</Button>
         </Box>

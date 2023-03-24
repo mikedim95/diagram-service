@@ -7,25 +7,37 @@ import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
 import About from "./pages/About";
 import RegisterConfirmation from "./pages/RegisterConfirmation";
 import Profile from "./pages/Profile";
-import DiagramCreator from "./pages/DiagramCreator";
+import UserCharts from "./pages/UserCharts";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
-root.render(
-  <React.StrictMode>
-    <BrowserRouter>
-      <Routes>
-        <Route path="/mycharts" element={<Home />} />{" "}
-        <Route path="*" element={<Navigate to="/mycharts" />} />{" "}
-        <Route path="/mycharts/about" element={<About />} />{" "}
-        <Route path="/mycharts/profile" element={<Profile />} />{" "}
-        <Route
-          path="/mycharts/registerconfirmation"
-          element={<RegisterConfirmation />}
-        />{" "}
-        <Route path="/mycharts/diagramcreator" element={<DiagramCreator />} />{" "}
-      </Routes>{" "}
-    </BrowserRouter>{" "}
-  </React.StrictMode>
+root.render( <
+    React.StrictMode >
+    <
+    BrowserRouter >
+    <
+    Routes >
+    <
+    Route path = "/mycharts"
+    element = { < Home / > }
+    /> <
+    Route path = "*"
+    element = { < Navigate to = "/mycharts" / > }
+    /> <
+    Route path = "/mycharts/about"
+    element = { < About / > }
+    /> <
+    Route path = "/mycharts/profile"
+    element = { < Profile / > }
+    /> <
+    Route path = "/mycharts/usercharts"
+    element = { < UserCharts / > }
+    /> <
+    Route path = "/mycharts/registerconfirmation"
+    element = { < RegisterConfirmation / > }
+    /> <
+    /Routes> <
+    /BrowserRouter> <
+    /React.StrictMode>
 );
 
 // If you want to start measuring performance in your app, pass a function
