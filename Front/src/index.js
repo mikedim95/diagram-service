@@ -7,22 +7,24 @@ import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
 import About from "./pages/About";
 import RegisterConfirmation from "./pages/RegisterConfirmation";
 import Profile from "./pages/Profile";
+import DiagramCreator from "./pages/DiagramCreator";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
     <BrowserRouter>
       <Routes>
-        <Route path="/mycharts" element={<Home />} />
-        <Route path="*" element={<Navigate to="/mycharts" />} />
-        <Route path="/mycharts/about" element={<About />} />
-        <Route path="/mycharts/profile" element={<Profile />} />
+        <Route path="/mycharts" element={<Home />} />{" "}
+        <Route path="*" element={<Navigate to="/mycharts" />} />{" "}
+        <Route path="/mycharts/about" element={<About />} />{" "}
+        <Route path="/mycharts/profile" element={<Profile />} />{" "}
         <Route
           path="/mycharts/registerconfirmation"
           element={<RegisterConfirmation />}
-        />
-      </Routes>
-    </BrowserRouter>
+        />{" "}
+        <Route path="/mycharts/diagramcreator" element={<DiagramCreator />} />{" "}
+      </Routes>{" "}
+    </BrowserRouter>{" "}
   </React.StrictMode>
 );
 
