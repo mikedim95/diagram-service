@@ -46,6 +46,15 @@ export default function VerticalButtonAppBar() {
               >
                 About
               </Button>
+              <Button
+                component={Link}
+                to="/mycharts/profile"
+                color="inherit"
+                variant="text"
+                sx={{ marginTop: "13px" }}
+              >
+                My account
+              </Button>
             </Box>
           </Toolbar>
         </AppBar>

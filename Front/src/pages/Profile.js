@@ -73,7 +73,13 @@ function Profile() {
           <Button variant="outlined" component={Link} to="/mycharts/usercharts">
             My charts
           </Button>
-          <Button variant="outlined">New chart</Button>
+          <Button
+            variant="outlined"
+            component={Link}
+            to="/mycharts/diagramcreator"
+          >
+            New chart
+          </Button>
           <Button variant="outlined">Buy credits</Button>
         </Box>
       </Container>

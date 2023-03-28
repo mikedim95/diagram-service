@@ -40,20 +40,16 @@ function DiagramCreator() {
         <Grid item xs={2}>
           <Box height={"100vh"} bgcolor="#4285F4">
             <VerticalButtonAppBar />
-          </Box>{" "}
-        </Grid>{" "}
+          </Box>
+        </Grid>
         <Grid item xs={10}>
-          <Box
-            component="main"
-            sx={{ flexGrow: 1, bgcolor: "background.default", p: 3 }}
-          >
+          <Box component="main" padding={3} flexGrow={1}>
             <Stack spacing={2}>
               <Box align="center">
-                {" "}
                 <Typography variant="h6" component="div">
-                  Let 's create your own chart!{" "}
-                </Typography>{" "}
-              </Box>{" "}
+                  Let's create your own chart!
+                </Typography>
+              </Box>
               <Box
                 sx={{
                   display: "flex",
@@ -61,8 +57,8 @@ function DiagramCreator() {
                   justifyContent: "center",
                 }}
               >
-                <SwipeableTextMobileStepper images={images} />{" "}
-              </Box>{" "}
+                <SwipeableTextMobileStepper images={images} />
+              </Box>
               <Box
                 sx={{
                   display: "flex",
@@ -72,9 +68,9 @@ function DiagramCreator() {
                 }}
               >
                 <div class="mb-3">
-                  <FileUploader />{" "}
-                </div>{" "}
-              </Box>{" "}
+                  <FileUploader />
+                </div>
+              </Box>
               <Box
                 sx={{
                   display: "flex",
@@ -82,21 +78,22 @@ function DiagramCreator() {
                   justifyContent: "center",
                 }}
               >
-                {" "}
                 <Button
                   variant="outlined"
                   component={Link}
                   to="/mycharts/diagramresult"
+                  sx={{ marginX: "5px" }}
                 >
-                  {" "}
-                  Upload and create chart{" "}
-                </Button>{" "}
-                <Button variant="contained"> Cancel </Button>{" "}
-              </Box>{" "}
-            </Stack>{" "}
-          </Box>{" "}
-        </Grid>{" "}
-      </Grid>{" "}
+                  Upload and create chart
+                </Button>
+                <Button variant="contained" sx={{ marginX: "5px" }}>
+                  Cancel
+                </Button>
+              </Box>
+            </Stack>
+          </Box>
+        </Grid>
+      </Grid>
     </div>
   );
 }

@@ -37,12 +37,11 @@ function SwipeableTextMobileStepper(props) {
           display: "flex",
           alignItems: "center",
           height: 50,
-          pl: 2,
-          bgcolor: "background.default",
+          paddingLeft: 2,
         }}
       >
-        <Typography> {images[activeStep].label} </Typography>{" "}
-      </Paper>{" "}
+        <Typography> {images[activeStep].label} </Typography>
+      </Paper>
       <SwipeableViewsComponent
         index={activeStep}
         onChangeIndex={handleStepChange}
@@ -53,7 +52,6 @@ function SwipeableTextMobileStepper(props) {
           justifyContent: "center",
         }}
       >
-        {" "}
         {images.map((step, index) => (
           <div key={step.label}>
             {" "}

@@ -16,19 +16,19 @@ root.render(
   <React.StrictMode>
     <BrowserRouter>
       <Routes>
-        <Route path="/mycharts" element={<Home />} />{" "}
-        <Route path="*" element={<Navigate to="/mycharts" />} />{" "}
-        <Route path="/mycharts/about" element={<About />} />{" "}
-        <Route path="/mycharts/profile" element={<Profile />} />{" "}
-        <Route path="/mycharts/usercharts" element={<UserCharts />} />{" "}
-        <Route path="/mycharts/diagramcreator" element={<DiagramCreator />} />{" "}
-        <Route path="/mycharts/diagramresult" element={<DiagramResult />} />{" "}
+        <Route path="/mycharts" element={<Home />} />
+        <Route path="*" element={<Navigate to="/mycharts" />} />
+        <Route path="/mycharts/about" element={<About />} />
+        <Route path="/mycharts/profile" element={<Profile />} />
+        <Route path="/mycharts/usercharts" element={<UserCharts />} />
+        <Route path="/mycharts/diagramcreator" element={<DiagramCreator />} />
+        <Route path="/mycharts/diagramresult" element={<DiagramResult />} />
         <Route
           path="/mycharts/registerconfirmation"
           element={<RegisterConfirmation />}
-        />{" "}
-      </Routes>{" "}
-    </BrowserRouter>{" "}
+        />
+      </Routes>
+    </BrowserRouter>
   </React.StrictMode>
 );
 
