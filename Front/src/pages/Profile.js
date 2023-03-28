@@ -80,7 +80,9 @@ function Profile() {
           >
             New chart
           </Button>
-          <Button variant="outlined">Buy credits</Button>
+          <Button variant="outlined" component={Link} to="/mycharts/credits">
+            Buy credits
+          </Button>
         </Box>
       </Container>
     </div>

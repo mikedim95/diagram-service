@@ -10,6 +10,7 @@ import Profile from "./pages/Profile";
 import UserCharts from "./pages/UserCharts";
 import DiagramCreator from "./pages/DiagramCreator";
 import DiagramResult from "./pages/DiagramResult";
+import Credits from "./pages/Credits";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
@@ -23,6 +24,7 @@ root.render(
         <Route path="/mycharts/usercharts" element={<UserCharts />} />
         <Route path="/mycharts/diagramcreator" element={<DiagramCreator />} />
         <Route path="/mycharts/diagramresult" element={<DiagramResult />} />
+        <Route path="/mycharts/credits" element={<Credits />} />
         <Route
           path="/mycharts/registerconfirmation"
           element={<RegisterConfirmation />}
